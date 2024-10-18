@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>About - Portofolio Alul</title>
 </head>
-<body>
+<body>  
     <!-- About Section -->
     <section class="about" id="about">
         <div class="about-container">

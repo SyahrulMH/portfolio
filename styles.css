@@ -37,7 +37,7 @@ section{
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    background-color:#1e2031;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,21 +46,22 @@ section{
 
 .logo{
     font-size: 2.5rem;
-    color: var(--text-color);
+    color: #ffffff;
     font-weight: 700;
     cursor: default;
 }
 
 .navbar a{
     font-size: 1.5rem;
-    color: var(--text-color);
+    color: #ffffff;
     margin-left: 4rem;
     font-weight: 700;
+    transition: color 0.3s ease;
 }
 
 .navbar a:hover,
 .navbar a:active{
-    color: var(--text-color);
+    color: #9da0c0;
 }
 
 #menu-icon{
@@ -101,4 +102,50 @@ span{
 }
 .btn{
     color:var(--text-color);
+}
+@keyframes floatImage {
+    0% {
+        transform: translatey(0);
+    }
+    50% {
+        transform: translatey(-2.4rem);
+    }
+    100%{
+        transform: translatey(0);
+    }
+}
+.home-content p {
+    font-size: 1.6rem;
+}
+
+.sosial-media a i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: #ffffff;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #ffffff;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+.sosial-media a i:hover{
+    background: var(--main-color);
+    color: var(--text-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.btn{
+    display: inline-block;
+    padding: 0 1rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1rem;
+    color: var(--bg-color);
+    font-weight: 600;
+    transition: .1s ease;
 }
